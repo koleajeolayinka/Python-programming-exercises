@@ -18,8 +18,8 @@ total3 = int(numberOfProduct3) * 100
 total_price = total3 + total2 + total
 print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 print("PRODUCT  QUANTITY    PRICE   TOTAL ")
-print(Product + "         " + numberOfProduct + "       " + "$10" + "      " + total)
-print(Product2 + "        " + numberOfProduct2 + "       " + "$50" + "     " + total2)
-print(product3 + "        " + numberOfProduct3 + "       " + "$100" + "     " + total3)
-print("Total                                                                 " + totalprice)
+print(Product, numberOfProduct, "$10", total, sep="\t\t\t")
+print(Product2, numberOfProduct2, "$50", total2, sep="\t\t\t")
+print(product3, numberOfProduct3, "$100", total3, sep="\t\t\t")
+print("Total                                                                 ", total_price)
 print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")

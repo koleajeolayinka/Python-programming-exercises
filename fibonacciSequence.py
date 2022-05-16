@@ -7,11 +7,13 @@
 #
 # print(total)
 
- #Python 3: Fibonacci series up to n
+# Python 3: Fibonacci series up to n
 def fib(n):
- a, b = 0, 1
- while a < n:
-    print(a, end=' ')
-    a, b = b, a+b
- print()
-fib(1000000000000)
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a + b
+    print()
+
+
+fib(10000000000000000)
