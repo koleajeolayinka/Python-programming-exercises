@@ -30,12 +30,14 @@ class Account_Test(unittest.TestCase):
     def test_that_account_has_a_name(self):
         """
         GIVEN:
-        WHEN:
-        THEN:
+        WHEN: when a deposite
+        THEN: account balance should be reflected
         """
         account1 = account.Account("tobi")
         name = account1.name
+        account1.deposit(200)
         self.assertEqual("tobi", name)
+        self.assertEqual(200, account1.balance)
 
 
 if __name__ == '__main__':
