@@ -22,7 +22,7 @@ class Account_sub(unittest.TestCase):
 
 class Account_Test(unittest.TestCase):
     def test_that_account_can_be_created(self):
-        account1 = account.Account()
+        account1 = account.Account("tobi")
 
         self.assertIsNotNone(account1)
         self.assertIsInstance(account1, account.Account)
@@ -33,7 +33,9 @@ class Account_Test(unittest.TestCase):
         WHEN:
         THEN:
         """
-
+        account1 = account.Account("tobi")
+        name = account1.name
+        self.assertEqual("tobi", name)
 
 
 if __name__ == '__main__':

@@ -7,4 +7,7 @@ def sub(x, y):
 
 
 class Account:
-    pass
+    def __init__(self, name):
+        self.name = name
+
+
