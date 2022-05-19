@@ -12,6 +12,9 @@ class Account:
         self.name = name
 
     def deposit(self, amount):
+        if amount < 0:
+
+            raise ValueError("AMOUNT CANNOT BE NEGATIVE")
         self.balance += amount
 
 

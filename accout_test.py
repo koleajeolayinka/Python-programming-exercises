@@ -39,6 +39,14 @@ class Account_Test(unittest.TestCase):
         self.assertEqual("tobi", name)
         self.assertEqual(200, account1.balance)
 
+    def test_that_negative_deposit_raises_error(self):
+        account1 = account.Account("tobi")
+        account1.deposit(500)
+
+        self.assertRaises(ValueError, account1.deposit, -1000)
+
+        self.assertEqual(500, account1.balance)
+
 
 if __name__ == '__main__':
     unittest.main()
