@@ -30,7 +30,7 @@ class Account_Test(unittest.TestCase):
     def test_that_account_has_a_name(self):
         """
         GIVEN:
-        WHEN: when a deposite
+        WHEN: when a deposit
         THEN: account balance should be reflected
         """
         account1 = account.Account("tobi")
@@ -46,6 +46,18 @@ class Account_Test(unittest.TestCase):
         self.assertRaises(ValueError, account1.deposit, -1000)
 
         self.assertEqual(500, account1.balance)
+
+    def test_that_account_can_load_airtime(self):
+        account1 = account.Account("tobi")
+        account1.balance(100)
+        account1.airtime(200)
+        account1.total_balance()
+        self.assertEqual(200, account1.airtime)
+
+    def test_account_can_transfer(self):
+        account1 = account.Account("tobi")
+
+    def test_account_can_withdraw(self):
 
 
 if __name__ == '__main__':
