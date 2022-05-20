@@ -56,8 +56,12 @@ class Account_Test(unittest.TestCase):
 
     def test_account_can_transfer(self):
         account1 = account.Account("tobi")
+        account1.balance(1000)
+        account1.transfer(300)
+        self.assertEqual(700, account1.currentBalance)
 
-    def test_account_can_withdraw(self):
+    # def test_account_can_withdraw(self)
+
 
 
 if __name__ == '__main__':
