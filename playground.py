@@ -1,5 +1,5 @@
 class Playground:
-    def __init__(self,  age):
+    def __init__(self, age):
         self._age = age
         # self._name = f"{} {}"
 
@@ -17,6 +17,7 @@ class Playground:
     @age.deleter
     def age(self):
         print("DELETING AGE...")
+
 
 p1 = Playground(1)
 print(p1.age)

@@ -10,7 +10,7 @@ class shopping_voucher(unittest.TestCase):
     def test_shopping_can_be_created(self):
         shopping1 = shopping.Basket()
         basket = shopping.BasketVoucher()
-        b1 =
+
 
 
 
