@@ -50,10 +50,13 @@
 #         print("Hello")
 
 
-class YourMoneyNoReachError(Exception):
+# class YourMoneyNoReachError(Exception):
+#
+#     def __init__(self, message="") -> None:
+#         super().__init__(message)
+#
+#
+#         raise YourMoneyNoReachError("Hello")
+from typing import List
 
-    def __init__(self, message="") -> None:
-        super().__init__(message)
 
-
-raise YourMoneyNoReachError("Hello")
