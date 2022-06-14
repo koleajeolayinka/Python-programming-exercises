@@ -16,3 +16,4 @@ if number <= number2:
 
 if number != number2:
     print(number, "and", number2, "are not equal")
+
